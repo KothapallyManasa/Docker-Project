@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Code Checkout') {
+        stage('Build') {
             steps {
-                def demoShared
+                demoShared()
                 // sh 'echo "mvn install"'
                // sh 'mvn install'
             }
