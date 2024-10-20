@@ -1,9 +1,9 @@
-@Library("Docker-Project") _
+@Library("shared-lib") _
 pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Code Checkout') {
             steps {
                 demoShared()
                 // sh 'echo "mvn install"'
