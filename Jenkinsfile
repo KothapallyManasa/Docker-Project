@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Code Checkout') {
             steps {
-                def demoShared=checkoutCode("https://github.com/KothapallyManasa/Docker-Project.git")
+                def demoShared
                 // sh 'echo "mvn install"'
                // sh 'mvn install'
             }
